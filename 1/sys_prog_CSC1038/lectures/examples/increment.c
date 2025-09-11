@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-  int a = 1;
-  ++a;
-  printf("%d\n", a);
+
+  for (int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+  }
 }
