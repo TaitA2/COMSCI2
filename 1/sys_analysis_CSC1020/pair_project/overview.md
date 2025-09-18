@@ -1,4 +1,5 @@
 # Pair Project
+[Project Description Handout](https://loop.dcu.ie/pluginfile.php/6267989/mod_resource/content/5/PairProject1-2025.pdf)
 ## Requirements
 * Define the topic / give some background on it
 * Summary of resources investigated
