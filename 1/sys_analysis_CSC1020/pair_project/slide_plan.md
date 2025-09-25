@@ -7,6 +7,9 @@
   * maybe just the headings 
 ## What is a system?
 * Definition of a system
+  * source of information
+  * testing / automation
+* Maybe use one of those UML diagrams from todays class?
 ## What is a system developer?
 * Definition of systems developer
 ## What do they do?
