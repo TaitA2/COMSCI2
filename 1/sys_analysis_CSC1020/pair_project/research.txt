@@ -18,3 +18,4 @@ Testing:
 Current functionality is compared to the system's desired results and changed appropriately, agile project management is favoured by many Businesses here.
  • Evaluation and maintenance:
  The system continues to be modified as clients find issues.
+ source: https://www.digitaltransformationinstitute.ie/blog/wip-stages-in-the-systems-development-life-cycle
