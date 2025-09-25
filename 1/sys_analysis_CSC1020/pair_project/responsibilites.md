@@ -1,4 +1,5 @@
 ## Integration developer example responsibilities.
+  * [Source](https://www.zippia.com/integration-developer-jobs/integration-developer-vs-systems-developer-differences/)
 * Lead operations, deploy applications, addressed production application issues, which improve operational processes on Linux machines.
 * Work in the configuration of ADB adapter to publish the data from UDB (DB2) database to JMS queues.
 * Deploy data models and business processes with numerous ERP systems.
