@@ -12,9 +12,14 @@
 * Maybe use one of those UML diagrams from todays class?
 ## What is a system developer?
 * Definition of systems developer
-## What do they do?
-* Responsibilities of system development
+* Responsibilities of system developer
+  * building systems around requirements
+  * designing the project to be completed within the limitations
+  * organising information systems and the flow of information to be usable and correctly formatted
 ## System Development Life Cycle (SDLC)
-* Might be the same as above
+* Flow chart diagram in slide
+* Talk over it to explain
+  * Mention different sdlc models but don't elaborate (outside scope of topic)
 ## System devloper vs system programmer
 * A few key differences
+  * Might not be enough time to include
