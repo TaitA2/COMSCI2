@@ -12,7 +12,7 @@
 * Maybe use one of those UML diagrams from todays class?
 ## What is a system developer?
 * Definition of systems developer
-* Responsibilities of system developer
+## Responsibilities of system developer
   * building systems around requirements
   * designing the project to be completed within the limitations
   * organising information systems and the flow of information to be usable and correctly formatted
