@@ -1,1 +1,3 @@
 Research will be stored here.
+Integrated systems developer:
+A person responsible for the development, implementation and maintenance of software systems that enable the flow ofinformation between multiple parts of a Business.    
