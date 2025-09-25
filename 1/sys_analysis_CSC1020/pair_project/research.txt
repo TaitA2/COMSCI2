@@ -1,3 +1,20 @@
 Research will be stored here.
-Integrated systems developer:
-A person responsible for the development, implementation and maintenance of software systems that enable the flow ofinformation between multiple parts of a Business.    
+Systems developer:
+A person responsible for developing systems that are hidden from users but that ensure an organisation runs smoothly.
+Responsibilities:
+• Discussing the requirements of a system with colleagues and end users,
+• Proposing solutions with the help of co-workers,
+• Building web applications using a variety of scripting languages,
+• Conducting testing and responding to user experiences (positive and negative).
+• Managing the lifecycle of the system.
+
+Source: https://targetjobs.co.uk/careers-advice/job-descriptions/systems-developer-job-description
+
+Systems development lifecycle (SDLC):
+• implementation:
+System construction: the system is developed by programmes and staff.
+System installation: Old system is replaced, usually in phases until everything is on the new one.
+Testing:
+Current functionality is compared to the system's desired results and changed appropriately, agile project management is favoured by many Businesses here.
+ • Evaluation and maintenance:
+ The system continues to be modified as clients find issues.
