@@ -2,6 +2,9 @@
 [Project Description Handout](https://loop.dcu.ie/pluginfile.php/6267989/mod_resource/content/5/PairProject1-2025.pdf)
 ## Requirements
 * Define the topic / give some background on it
+  * what is a system
+  * what is a system developer
+  
 * Summary of resources investigated
 * Say why its useful / why you should view / read it and what we learned
 ## Topic
