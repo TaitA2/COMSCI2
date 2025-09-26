@@ -1,31 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
-char *longest(char *s);
-int main(int argc, char *argv[]){
-  longest(*argv);
+char *longest(int size, char *s);
+
+int main(int argc, char *argv[]) {
+  printf("%s\n", longest(argc, argv[1]));
+  return 0;
 }
-char *longest(char *s){
-  int start = 0;
-  int end = 0;
-  int i = 0;
-  int j = 1;
-  while (s[i] != '\0'){
-    j = i+1;
-    while (s[j] != '\0' && s[j] != ' '){
-      j++;
+
+char *longest(int size, char *s) {
+  int max = 0;
+  char *longest = "";
+
+  char *word = strtok(s, " ");
+  while (word != NULL) {
+    int length = strlen(word);
+    if (length > max) {
+      max = length;
+      longest = word;
     }
-    if (j - i > end - start){
-      start = i;
-      end = j;
-    }
-    i = j;
+    word = strtok(NULL, " ");
   }
-  printf("start is %d\n", start);
-  printf("end is %d\n", end);
-  for (int i = start; i <= end; i++){
-    printf("%c",s[i]);
-  }
-  printf("\n");
-  printf("done\n");
+  return longest;
 }
