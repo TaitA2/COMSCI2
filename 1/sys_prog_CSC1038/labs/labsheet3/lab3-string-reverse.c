@@ -8,8 +8,8 @@ This program reverses the string passed as the first argument
 
 void reverse(char *s);
 
-int main(int argc, char *argv[]){
-  if (argc != 2){
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
     printf("Enter exactly one argument\n");
     return 0;
   }
@@ -17,19 +17,12 @@ int main(int argc, char *argv[]){
   return 0;
 }
 
-void reverse(char *s){
-  char reversed[50];
-  reversed[49] = '\0';
-  int i = 0;
-  while (s[i] != '\0'){
-    reversed[50-i-2] = s[i];
-    i++;
+void reverse(char *s) {
+  int i = strlen(s) - 1;
+  while (i >= 0) {
+    printf("%c", s[i]);
+    i--;
   }
 
-  i = 50 - i - 1;
-  while (reversed[i] != '\0'){
-    printf("%c",reversed[i]);
-    i++;
-  }
   printf("\n");
 }
