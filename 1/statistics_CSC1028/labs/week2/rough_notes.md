@@ -7,3 +7,10 @@
 * table(x)/1000
   * count each element in the table
     * divide by number of elements to find percentage
+* for loops
+  * for (i in start:end) code
+  * for (i in 1:100) x[i] = 2^i
+* length(x)
+  * gets the length duh
+* plot(x)
+  * basic plot chart of elements

@@ -122,3 +122,44 @@
 10. Amy and Jane are gambling against eachother. A fair coin is tossed repeatedly. Each time a head comes up, Amy wins two euro from Jane, and each time a tails comes up, AMy loses 2 euro to Jane. Use R to simulate this game 100 times.
 * a) Estimate the number of times that Amy is ahead in these 100 tosses
 * b) Estimate how much Amy won or lost
+  * get the sample space
+    * 2 possibilites
+      * win 2
+      * lose 2
+    * x = sample(c(2,-2),100,replace=T)
+  * start total count at 0
+    * total = 0
+  * set first value of total to first value of x
+    * total[1] = x[1]
+  * use a for loop to set each element of total to the new score by adding the ith value of x to the previous value in total
+    * for (i in 2:100) total[i] = total[i-1]+x[i]
+  * view it as a plot
+    * plot(total)
+  * view indexes of elements where the score was positive
+    * total[total > 0]
+  * get the number of times the total was positive
+    * length(total[total > 0])
+  * get the finishing winnings or losings
+    * total[100]
+    * OR
+    * sum(x)
+
+11. A series of 20 jobs arrive at a computing center with 50 processors. Assume that each of the jobs is equally likely to go through any one of the processors. Find the probability that a processor is used at least twice.
+  * 2 solutions
+    * Permutations formula
+      * start with compliment
+      * 2 things to find
+        * number of ways 50 processors could be allocated to 20 jobs without repeats
+          * 50P20
+        * sample space
+          * 50^20
+      * P(É) = 50P20 / 50^20
+        * 0.01202305
+      * P(E) = 1 - (50P20 / 50^20)
+        * 0.9870769
+      * ~98%
+    * Simulation
+      * num_ps = 0
+      * for (i in 1:1000) num_ps[i] = length(unique(sample(1:50,20,replace=T)))
+      * P(É) = length(num_ps[num_ps==20])*100
+      * P(E) = 1 - length(num_ps[num_ps==20])*100
