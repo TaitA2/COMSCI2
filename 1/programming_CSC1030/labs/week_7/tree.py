@@ -29,7 +29,14 @@ class Tree:
 
     # return array of nodes children of node provided
     def children(self, node):
-        return node.children
+        if not self.is_binary:
+            return node.children
+        children = []
+        if node.left:
+            children.append(node.left)
+        if node.right:
+            children.append(node.right)
+        return children
 
     # add a new node with given val as a child of parent node provided
     def add_child(self, parent, val):
@@ -66,16 +73,106 @@ class Tree:
     # return array of values of all nodes in preorder
     def preorder(self):
         out = []
-        pass
+        if self.root is None:
+            return out
+        stack = [self.root]
+        while stack:
+            cur = stack.pop()
+            out.append(cur.val)
+            if cur.right:
+                stack.append(cur.right)
+            if cur.left:
+                stack.append(cur.left)
+            if cur.children:
+                stack += cur.children[::-1]
+        return out
 
     # return array of values of all nodes in postorder
     def postorder(self):
         out = []
-        pass
+        seen = set()
+        if self.root is None:
+            return out
+        stack = [self.root]
+        while stack:
+            cur = stack[-1]
+            if self.is_leaf(cur) or cur in seen:
+                out.append(cur.val)
+                stack.pop()
+                continue
+            seen.add(cur)
+
+            if cur.right:
+                stack.append(cur.right)
+
+            if cur.left:
+                stack.append(cur.left)
+
+            if cur.children:
+                stack += cur.children[::-1]
+        
+        return out
 
     # return array of values of all nodes in inorder
     def inorder(self):
         out = []
-        pass
+        seen = set()
+        if self.root is None:
+            return out
+        stack = [self.root]
+        while stack:
+            cur = stack[-1]
+            if self.is_leaf(cur) or cur in seen:
+                if self.is_binary:
+                    out.append(cur.val)
+                    stack.pop()
+                    if len(stack) < 2:
+                        continue
+
+                    parent = stack.pop(-2)
+                    out.append(parent.val)
+
+                else:
+                    if len(stack) >= 3:
+                        parent = stack.pop(-3)
+                        out.append(parent.val)
+
+                    out.append(cur.val)
+                    stack.pop()
+                
+
+            seen.add(cur)
+
+            if cur.right:
+                stack.append(cur.right)
+
+            if cur.left:
+                stack.append(cur.left)
+
+            if cur.children:
+                if not self.is_leaf(cur.children[0]):
+                    stack += cur.children[::-1]
+                    continue
+                child_count = len(cur.children)
+                i = 0
+                while i < child_count//2:
+                    c = cur.children[i]
+                    out.append(c.val)
+                    i += 1
+                if i != 0:
+                    out.append(cur.val)
+                while i < child_count:
+                    c = cur.children[i]
+                    out.append(c.val)
+                    i += 1
+                if cur.val not in out:
+                    out.append(cur.val)
+                if stack:
+                    stack.pop()
+                
+        
+        return out
+
+            
 
      

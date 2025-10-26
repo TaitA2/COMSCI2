@@ -145,8 +145,8 @@ class TestTree(unittest.TestCase):
         t.insert_left(b, 12)
         t.insert_right(b, 20)
         self.assertEqual(t.preorder(), [10, 5, 2, 7, 15, 12, 20])
-        self.assertEqual(t.inorder(), [2, 5, 7, 10, 12, 15, 20])
         self.assertEqual(t.postorder(), [2, 7, 5, 12, 20, 15, 10])
+        self.assertEqual(t.inorder(), [2, 5, 7, 10, 12, 15, 20])
 
     def test_binary_enforcement(self):
         t = Tree(is_binary=True)
