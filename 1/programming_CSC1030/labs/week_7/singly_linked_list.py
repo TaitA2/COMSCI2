@@ -38,8 +38,13 @@ class SinglyLinkedList:
             self.tail = node
             return node
 
+        if val <= self.head.val:
+            node.next = self.head
+            self.head = node
+            return node
+            
         cur = self.head
-        while cur.next != None and cur.next.next != None:
+        while cur.next != None:
             if cur.val <= val and cur.next.val >= val:
                 node.next = cur.next
                 cur.next = node
