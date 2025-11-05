@@ -194,7 +194,7 @@ class BSTTest(unittest.TestCase):
 
         # self.assertEqual([17, 18, 25, 19, 51, 62, 60, 50], tree.postorder())
         # self.assertEqual([50, 19, 18, 17, 25, 60, 51, 62], tree.preorder())
-        self.assertEqual([17, 18, 19, 25, 50, 51, 60, 62], tree.in_order_using_before())
+        self.assertEqual([17, 18, 19, 25, 50, 51, 60, 62], tree.in_order_using_after())
 
     def test_delete_root_two_children(self):
 

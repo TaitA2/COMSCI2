@@ -50,16 +50,16 @@ class BinarySearchTree:
         else:
             return node
 
-    def first(self):
-        if not self.root:
+    def first(self, node=None):
+        if not node:
+            node = self.root
+        if not node:
             return None
 
-        def _first(node):
-            if not node.left:
-                return node
-            return _first(node.left)
+        while node.left:
+            node = node.left
+        return node
 
-        return _first(self.root)
 
     def last(self, node=None):
 
@@ -69,12 +69,10 @@ class BinarySearchTree:
         if not node:
             return None
 
-        def _last(node):
-            if not node.right:
-                return node
-            return _last(node.right)
 
-        return _last(node)
+        while node.right:
+            node = node.right
+        return node
 
     def before(self, node):
 
@@ -83,18 +81,10 @@ class BinarySearchTree:
 
         if node.left:
             return self.last(node.left)
+        while node.parent and node.parent.right != node:
+            node = node.parent
+        return node.parent
 
-        def _before(node):
-
-            if not node or not node.parent:
-                return None
-
-            if node.parent.right == node:
-                return node.parent
-
-            return _before(node.parent)
-
-        return _before(node)
 
     def print_tree(self):
         def display(node):
@@ -133,17 +123,23 @@ class BinarySearchTree:
         print("\n".join(lines))
 
     def after(self, node):
-
-        if node is self.root and node.right:
-            return self.after(node.right)
-
-        if not node or not node.parent:
+        if not node:
             return None
+
         if node.right:
-            return self.after(node.right)
-        if node.parent.left == node:
-            return node.parent
-        return self.after(node.parent)
+            return self.first(node.right)
+
+        def _after(node):
+
+            if not node or not node.parent:
+                return None
+
+            if node.parent.left == node:
+                return node.parent
+
+            return _after(node.parent)
+
+        return _after(node)
 
     def in_order_using_before(self):
         out = []
@@ -156,38 +152,65 @@ class BinarySearchTree:
     
     def in_order_using_after(self):
         out = []
-        cur = self.last()
+        cur = self.first()
 
         while cur:
-            out = [cur.key]+out
-            cur = self.before(cur)
+            out.append(cur.key)
+            cur = self.after(cur)
         return out
                 
     def delete(self, node):
         
         cur = self.root
         if cur == node:
-            self.root = None
+            if cur.left and cur.right:
+                self.root = cur.left
+                self.last(cur.left).right = cur.right
+                
             if cur.left:
                 self.root = cur.left
+                return
             elif cur.right:
                 self.root = cur.right
+                return
+            else:
+                self.root = None
+                return
 
         while cur:
+            if cur == node:
+                if cur.left and cur.right:
+                    if cur == cur.parent.left:
+                        cur.parent.left = cur.left
+                        self.last(cur.parent.left).left = cur.right
+                        return
+                    if cur == cur.parent.right:
+                        cur.parent.right = cur.left
+                        self.last(cur.parent.right).left = cur.right
+                        return
+                if cur.left:
+                    cur.parent.left = cur.left
+                    return
+                elif cur.right:
+                    cur.parent.right = cur.right
+                    return
+                else:
+                    if cur == parent.left:
+                        parent.left = None
+                        return
+                    elif cur == parent.right:
+                        parent.right = None
+                        return
+                return
+
             if node.key < cur.key:
                 if cur.left:
-                    if cur.left == node:
-                        cur.left = None
-                        return
                     cur = cur.left
                     continue
                 else:
                     return
             elif node.key > cur.key:
                 if cur.right:
-                    if cur.right == node:
-                        cur.right = None
-                        return
                     cur = cur.right
                     continue
                 else:
