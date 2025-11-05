@@ -145,7 +145,7 @@ class BinarySearchTree:
         out = []
         cur = self.last()
 
-        while cur:
+        while cur and cur.key not in out:
             out = [cur.key]+out
             cur = self.before(cur)
         return out
@@ -154,52 +154,62 @@ class BinarySearchTree:
         out = []
         cur = self.first()
 
-        while cur:
+        while cur and cur.key not in out:
             out.append(cur.key)
             cur = self.after(cur)
         return out
                 
     def delete(self, node):
         
-        cur = self.root
-        if cur == node:
-            if cur.left and cur.right:
-                self.root = cur.left
-                self.last(cur.left).right = cur.right
-                
-            if cur.left:
-                self.root = cur.left
+        if self.root is node:
+            if self.root.left and self.root.right:
+                last = self.last(self.root.left) 
+                last.right = self.root.right
+                self.root.right.parent = last
+                self.root = self.root.left
+                self.root.parent = None
                 return
-            elif cur.right:
-                self.root = cur.right
+                
+            if self.root.left:
+                self.root = self.root.left
+                self.root.parent = None
+                return
+            elif self.root.right:
+                self.root = self.root.right
+                self.root.parent = None
                 return
             else:
                 self.root = None
                 return
 
+        cur = self.root
         while cur:
-            if cur == node:
+            if cur is node:
                 if cur.left and cur.right:
+                    cur.left.parent = cur.parent
+                    last = self.last(cur.left)
+                    cur.right.parent = last
+                    last.right = cur.right
                     if cur == cur.parent.left:
                         cur.parent.left = cur.left
-                        self.last(cur.parent.left).left = cur.right
                         return
                     if cur == cur.parent.right:
                         cur.parent.right = cur.left
-                        self.last(cur.parent.right).left = cur.right
                         return
                 if cur.left:
                     cur.parent.left = cur.left
+                    cur.left.parent = cur.parent
                     return
                 elif cur.right:
                     cur.parent.right = cur.right
+                    cur.right.parent = cur.parent
                     return
                 else:
-                    if cur == parent.left:
-                        parent.left = None
+                    if cur == cur.parent.left:
+                        cur.parent.left = None
                         return
-                    elif cur == parent.right:
-                        parent.right = None
+                    elif cur == cur.parent.right:
+                        cur.parent.right = None
                         return
                 return
 
