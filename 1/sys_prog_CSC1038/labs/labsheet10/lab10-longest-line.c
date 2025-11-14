@@ -24,7 +24,7 @@ int main(int argc, char *argvp[]) {
   // find the longest line
   Line *line = getLongest("paragraph.txt");
   // print the line length and content
-  printf("%d\n%s\n\n", line->length, line->content);
+  printf("%d\n%s\n", line->length, line->content);
   // exit with no error
   return 0;
 }
@@ -39,22 +39,26 @@ Line *getLongest(char *filename) {
   // open the file
   FILE *pfile = fopen(filename, "r");
 
-  // initialise a statuse int
-  int status;
-  do {
-    // initialise a buffer for the next line to parse
-    char line[200];
-    // scan everything from the start to the newline
-    status = fscanf(pfile, "%[^\n]%*[\n]", line);
+  // initialise a buffer for the next line to parse
+  char *line = malloc(sizeof(char) * 200);
+  // scan everything from the start to the newline
+  line = fgets(line, 200, pfile);
+
+  // repeate until EOF
+  while (line) {
+
     // get the length of the sentence
-    int len = strlen(line) + 1; // +1 to include '\n'
+    int len = strlen(line);
 
     // replace the values in the longest line if current line is longer
     if (len > longestLine->length) {
       longestLine->length = len;
       sprintf(longestLine->content, "%s", line);
     }
-  } while (status == 1); // repeate while status is 1
+
+    // scan the next line
+    line = fgets(line, 200, pfile);
+  }
 
   // close the file
   fclose(pfile);
