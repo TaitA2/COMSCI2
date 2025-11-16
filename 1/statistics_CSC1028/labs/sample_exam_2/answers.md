@@ -1,7 +1,7 @@
 # Probability and Statistics SAMPLE lab exam 2
 ## Q1
 - Q1.A
-  * ![Boxplot]("./boxplot.png")
+  * ![Boxplot]("boxplot.png")
   * Yes, the boxplot suggests casein leads to the highest mean weight and horsebean the lowest.
 - Q1.B
   * tapply(weight, feed, mean)
@@ -17,4 +17,4 @@
   * proportion = length(lin_or_sun) / length(light_feeds)
   * proportion = 0.2222222
 ## Q2
-- ![Simulation]("./simulation.png")
+- ![Simulation]("simulation.png")
