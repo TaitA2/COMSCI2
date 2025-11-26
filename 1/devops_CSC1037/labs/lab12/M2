@@ -1,0 +1,2 @@
+.PHONY run:
+	sh build.sh
