@@ -1,3 +1,5 @@
+# Semester 1 Marking breakdown
+* [Thelma's Page](https://thelmina4.github.io/student-timetable/deadlines.html#exams-projects)
 ## Systems Analysis
 * Total - 28.4%
 * Total Possible - 83.4%
@@ -23,6 +25,7 @@
 ### Submissions
 * Final Exam     80%
   * December 12th
+  * [Past Papers](https://loop.dcu.ie/course/view.php?id=74758&section=5)
 
 
 ## Programming 3
