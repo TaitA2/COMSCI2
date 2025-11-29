@@ -11,30 +11,31 @@
 * Group Project SRS - Full version  25%
   * Deadline November 23rd
 * Individual project video          20%
-  * Deadline November 30th
+  * Deadline December 7th
 
 
 ## Linear Algebra
-* Total - 4%
-* Total Possible - 94%
+* Total - 10%
+* Total Possible - 90%
 ### Continuous Assessment
 * Quiz 1       4/10%
-* Quiz 2       10%
+* Quiz 2       6/10%
 ### Submissions
-* Final Exam   80%
+* Final Exam     80%
+  * December 12th
 
 
 ## Programming 3
-* Total - 7.3%
-* Total Possible - 97%
+* Total - 18.9%
+* Total Possible - 88.9%
 ### Continuous Assessment
 * Lab Exam 1 7.3/10%
-* Lab Exam 2 10%
+* Lab Exam 2 8.9/10%
   * November 17th
-* Quizzes    10%
+* Quizzes    2.7/10%
 ### Submission
-* Final Exam 70%
-
+* Final Loop Quiz 70%
+  * December 8th 
 
 ## DevOps
 * Total  - 65%
@@ -52,14 +53,16 @@
   * November 25th
 ### Submissions
 * Final Exam 80%
-
+  * December 16th
+  * [Possible questions](https://loop.dcu.ie/pluginfile.php/6438017/mod_resource/content/1/11_WrapUp.pdf)
 
 ## Systems Programming
-* Total - 20%
+* Total - 0%
 * Total Possible - 80%
 ### Continuous Assessment
-* Weekly Labs 20/20%
+* Weekly Labs 20%
 * Lab Exam 1 0/20%
 * Lab Exam 2 20%
 ### Submissions
 * Final Exam 40%
+  * December 10th 
