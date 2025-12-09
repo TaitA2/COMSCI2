@@ -60,12 +60,12 @@
   * [Possible questions](https://loop.dcu.ie/pluginfile.php/6438017/mod_resource/content/1/11_WrapUp.pdf)
 
 ## Systems Programming
-* Total - 0%
-* Total Possible - 80%
+* Total - 16.2%
+* Total Possible - 76.2%
 ### Continuous Assessment
 * Weekly Labs 20%
 * Lab Exam 1 0/20%
-* Lab Exam 2 20%
+* Lab Exam 2 16.2/20%
 ### Submissions
 * Final Exam 40%
   * December 10th 
