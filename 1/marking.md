@@ -1,8 +1,8 @@
 # Semester 1 Marking breakdown
 * [Thelma's Page](https://thelmina4.github.io/student-timetable/deadlines.html#exams-projects)
+
 ## Systems Analysis
-* Total - 28.4%
-* Total Possible - 83.4%
+* Total - 65.4%
 ### Continuous Assessment
 * weekly quizzes                    3.4/10%
 * Participation in class            10%
@@ -10,9 +10,9 @@
 ### Submissions
 * Pair project video                10/15%
 * Group Project SRS - Draft version 11.5/15%
-* Group Project SRS - Full version  25%
+* Group Project SRS - Full version  21/25%
   * Deadline November 23rd
-* Individual project video          20%
+* Individual project video          16/20%
   * Deadline December 7th
 
 
@@ -41,8 +41,7 @@
   * December 8th 
 
 ## DevOps
-* Total  - 65%
-* Total Possible - 92% 
+* Total  - 90%
 ### Continuous Assessment
 * weekly submissions 100%
 
@@ -60,12 +59,11 @@
   * [Possible questions](https://loop.dcu.ie/pluginfile.php/6438017/mod_resource/content/1/11_WrapUp.pdf)
 
 ## Systems Programming
-* Total - 16.2%
-* Total Possible - 76.2%
+* Total - 73% (or 92%?)
 ### Continuous Assessment
-* Weekly Labs 20%
-* Lab Exam 1 0/20%
+* Weekly Labs 19.6/20%
+* Lab Exam 1 19/20%
 * Lab Exam 2 16.2/20%
 ### Submissions
-* Final Exam 40%
+* Final Exam 37.2/40%
   * December 10th 
