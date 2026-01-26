@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+Single Book
+{% endblock %}
+
+{% block content %}
+	<h3>{{ book.title }} by {{ book.author }} - €{{ book.price }}</h3>
+	<h4>{{ book.year }}</h4>
+	<p>{{ book.synopsis }}</p>
+{% endblock %}
+
