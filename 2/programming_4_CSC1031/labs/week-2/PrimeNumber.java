@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PrimeNumber {
+    private static boolean[] prime;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,10 +12,22 @@ public class PrimeNumber {
         long cnt = 0;
 
         // Write your code
-        for (int i =1; i <= limit; i++){
-          if (isPrime(i)){
-            cnt++;
-          }
+        prime = new boolean[(int)limit+1];
+        for (int i =0; i <= limit; i++){
+        prime[i] = true;
+        }
+
+        for (int i = 2; i*i <= limit;i++){
+            if (prime[i]){
+                for (int j = i*i; j <= limit; j += i){
+                    prime[j] = false;
+                }
+            }
+        }
+        for (int i = 2; i <= limit; i++){
+            if (isPrime(i)){
+                cnt++;
+            }
         }
 
         // Print the results
@@ -23,21 +36,6 @@ public class PrimeNumber {
 
     // Function to check if it is prime
     private static boolean isPrime(long num) {
-        if (num <= 1){
-            return false;
-        }
-        if (num == 2 || num == 3){
-            return true;
-        }
-        if (num % 2 == 0 || num % 3 == 0){
-            return false;
-        }
-        for (int i = 5; i <= Math.sqrt(num); i = i + 6){
-            if (num % i == 0 || num % (i + 2) == 0){
-                return false;
-            }
-        }
-
-        return true;
+        return prime[(int)num];
     }
 }
