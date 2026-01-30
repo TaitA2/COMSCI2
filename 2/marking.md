@@ -17,7 +17,7 @@
 
 ## Operating Systems
 * Total - 0%
-### Continuous A ssessment
+### Continuous Assessment
 * 30%
 ### Exam
 * 70%
@@ -55,7 +55,7 @@
 * Total - 0%
 ### Continuous Assessment
 * 50%
-  * quizzes - 15%
+  * quizzes - 3.8/15%
   * essay   - 25%
   * project - 15%
   * labs    - 20%
