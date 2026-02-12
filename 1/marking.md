@@ -1,8 +1,9 @@
 # Semester 1 Marking breakdown
+* 80% OVERALL
 * [Thelma's Page](https://thelmina4.github.io/student-timetable/deadlines.html#exams-projects)
 
 ## Systems Analysis
-* Total - 65.4%
+* Total - 70%
 ### Continuous Assessment
 * weekly quizzes                    3.4/10%
 * Participation in class            10%
@@ -17,13 +18,12 @@
 
 
 ## Linear Algebra
-* Total - 10%
-* Total Possible - 90%
+* Total - 87%
 ### Continuous Assessment
 * Quiz 1       4/10%
 * Quiz 2       6/10%
 ### Submissions
-* Final Exam     80%
+* Final Exam     77/80%
   * December 12th
   * [Past Papers](https://loop.dcu.ie/course/view.php?id=74758&section=5)
 
@@ -47,7 +47,7 @@
 
 
 ## Probability and Statistics
-* Total - 8.2%
+* Total - 83%
 * Total Possible - 98.2%
 ### Continuous Assessment
 * Lab Exam 1  8.2/10%
@@ -59,7 +59,7 @@
   * [Possible questions](https://loop.dcu.ie/pluginfile.php/6438017/mod_resource/content/1/11_WrapUp.pdf)
 
 ## Systems Programming
-* Total - 73% (or 92%?)
+* Total - 92%
 ### Continuous Assessment
 * Weekly Labs 19.6/20%
 * Lab Exam 1 19/20%
