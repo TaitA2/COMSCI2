@@ -1,4 +1,4 @@
-# Semester 2 Marking breakdown
+# Semester 2 Marking Breakdown
 * [Thelma's Page](https://thelmina4.github.io/student-timetable/deadlines2.html#exams-projects)
 
 ## Logic
@@ -23,11 +23,11 @@
 * 70%
 
 ## Databases
-* Total - 0%
+* Total - 15%
 ### Continuous Assessment
 * 4 assignments - 100%
-  * (Lab) Relational Model & Algebra - 15%
-    * Feb 6
+  * (Lab) Relational Model & Algebra - 15/15%
+    * Feb 13
   * (Home) ER Models                 - 20%
     * Feb 27
   * (Lab) F/D/ / Normalisation       - 25%
@@ -47,15 +47,15 @@
 * Total - 0%
 ### Continuous Assessment
 * 3 Lab exams - 100%
-  * Week 4  - 30%
-  * Week 8  - 40%
-  * Week 12 - 30%
+  * Feb 4  - 20/30%
+  * Mar 11 - 40%
+  * Apr 8  - 30%
 
 ## Programming 4
-* Total - 0%
+* Total - 6.8%
 ### Continuous Assessment
 * 50%
-  * quizzes - 3.8/15%
+  * quizzes - 6.8/15%
   * essay   - 25%
   * project - 15%
   * labs    - 20%
