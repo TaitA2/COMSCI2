@@ -16,19 +16,20 @@
     * 2 of 3 questions    - 20% (10% each)
 
 ## Operating Systems
-* Total - 0%
+* Total - 8.2%
 ### Continuous Assessment
-* 30%
+* Lab exam 8.214/10%
+* Shell Project 20%
 ### Exam
 * 70%
 
 ## Databases
-* Total - 15%
+* Total - 27%
 ### Continuous Assessment
 * 4 assignments - 100%
   * (Lab) Relational Model & Algebra - 15/15%
     * Feb 13
-  * (Home) ER Models                 - 20%
+  * (Home) ER Models                 - 12/20%
     * Feb 27
   * (Lab) F/D/ / Normalisation       - 25%
     * March 13
@@ -36,19 +37,19 @@
     * April 10
 
 ## Fullstack Development
-* Total - 0%
+* Total - 46.92(?)%
 ### Continuous Assessment
 * 4 loop exams - 100%
-  * Django + REST/APIs - 40%
-  * Javascript         - 20%
+  * Django + REST/APIs - 33.52/40%
+  * Javascript         - 13.4(?)/20%
   * React              - 40%
 
 ## Software Testing
-* Total - 0%
+* Total - 48.5%
 ### Continuous Assessment
 * 3 Lab exams - 100%
   * Feb 4  - 20/30%
-  * Mar 11 - 40%
+  * Mar 11 - 28.5/40%
   * Apr 8  - 30%
 
 ## Programming 4
