@@ -56,6 +56,9 @@ countAway(T, [_|L], N) :- countAway(T, L, N).
 % a given team has the same number of home and away games
 sameHomeAway(T, S) :- countHome(T, S, N), countAway(T, S, N). 
 
+% no team in the schedule has more than a difference of 2 between home and away games
+teamBalance(HT, AT, S) :- countHome(HT, S, HH), countAway(HT, S, HA), countHome(AT, S, AH), countAway(AT, S, AA), abs(HH + 1 - HA) =< 2, abs(AH - AA + 1) =< 2.
+
 fixture(HomeT, AwayT) :-  group(G, HomeT), group(G, AwayT), HomeT \== AwayT.
 
 % find when a team last played a fixture
@@ -66,6 +69,11 @@ lastPlayed(T, [_|L], D) :- lastPlayed(T, L, D).
 % check that a given team has at least 4 days rest between fixtures
 countRest(T, D, S) :- lastPlayed(T, S, Last), Day > Last + 4.
 countRest(T, _, S) :- \+ lastPlayed(T, S, _). % team T has not played yet, any value of D is ok
+
+% assign a suitable day to each fixture in the schedule
+assignDays([], _, S, S).
+assignDays([(H, A)|L], D, S, S1) :- countDay(Day, S, N), N < 3, countRest(H, D, S), countRest(A, D, S), teamBalance(H, A, S), !, assignDays(L, D, [(H, A, D)], S1).
+assignDays(Fixtures, D, S, S1) :- D1 is D + 1, assignDays(Fixtures, D1).
 
 % schedule(S)
 % S is a list of fixtures
