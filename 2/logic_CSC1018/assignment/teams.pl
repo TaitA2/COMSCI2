@@ -40,7 +40,7 @@ group(f, fe).
 
 % count how many matches are on a given day
 countDay(_, [], 0) :- !.
-countDay(D, [(_,_,D)|L], N) :- countDay(D,L,N1), N is N1 + 1.
+countDay(D, [(_,_,D)|L], N) :- countDay(D,L,N1), N is N1 + 1, !.
 countDay(D, [_|L], N) :- countDay(D, L, N).
 
 % count how many games a given team is the home team
