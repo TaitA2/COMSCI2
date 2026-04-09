@@ -39,19 +39,19 @@ group(f, fd).
 group(f, fe).
 
 % count how many matches are on a given day
-countDay(_, [], 0) :- !.
-countDay(D, [(_,_,D)|L], N) :- countDay(D,L,N1), N is N1 + 1, !.
+countDay(_, [], 0).
+countDay(D, [(_,_,D)|L], N) :- !, countDay(D,L,N1), N is N1 + 1.
 countDay(D, [_|L], N) :- countDay(D, L, N).
 
 % count how many games a given team is the home team
-countHome(_, [], 0) :- !.
-countHome(T, [(T,_,_)|L], N) :- countHome(T,L,N1), N is N1 + 1, !.
-countHome(D, [_|L], N) :- countHome(D, L, N).
+countHome(_, [], 0).
+countHome(T, [(T,_,_)|L], N) :- !, countHome(T,L,N1), N is N1 + 1.
+countHome(T, [_|L], N) :- countHome(T, L, N).
 
 % count how many games a given team is the away team
-countAway(_, [], 0) :- !.
-countAway(T, [(_,T,_)|L], N) :- countAway(T,L,N1), N is N1 + 1, !.
-countAway(D, [_|L], N) :- countAway(D, L, N).
+countAway(_, [], 0).
+countAway(T, [(_,T,_)|L], N) :- !, countAway(T,L,N1), N is N1 + 1.
+countAway(T, [_|L], N) :- countAway(T, L, N).
 
 % a given team has the same number of home and away games
 sameHomeAway(T, S) :- countHome(T, S, N), countAway(T, S, N). 
