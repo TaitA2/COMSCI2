@@ -58,6 +58,15 @@ sameHomeAway(T, S) :- countHome(T, S, N), countAway(T, S, N).
 
 fixture(HomeT, AwayT) :-  group(G, HomeT), group(G, AwayT), HomeT \== AwayT.
 
+% find when a team last played a fixture
+lastPlayed(T, [(T,_,D)|_], D) :- !. % base case for home team
+lastPlayed(T, [(_,T,D)|_], D) :- !. % base case for away team
+lastPlayed(T, [_|L], D) :- lastPlayed(T, L, D).
+
+% check that a given team has at least 4 days rest between fixtures
+countRest(T, D, S) :- lastPlayed(T, S, Last), Day > Last + 4.
+countRest(T, _, S) :- \+ lastPlayed(T, S, _). % team T has not played yet, any value of D is ok
+
 % schedule(S)
 % S is a list of fixtures
 % fixture is (homeTeam, awayTeam, day)
