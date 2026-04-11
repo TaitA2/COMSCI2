@@ -1,3 +1,8 @@
+% Project     - Fixture Scheduler
+% Author      - Adam Tait
+% Student No. - 20303733
+
+
 % FACTS
 
 % team group assignments
