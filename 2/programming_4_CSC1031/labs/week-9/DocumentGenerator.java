@@ -117,7 +117,7 @@ final class Report extends Document {
         System.out.print("Enter report summary: ");
         String summary = scanner.nextLine().strip();
         if (summary.isEmpty())
-        System.out.println("Warning: Summary is empty.");
+            System.out.println("Warning: Summary is empty.");
         content.add("Report Summary: " + summary);
         content.add("Reviewed by: Management Department");
     }
@@ -157,7 +157,7 @@ final class Receipt extends Document {
         }
         content.add("Total Paid: €" + Double.parseDouble(total));
         content.add("Items Purchased: " + count);
-        double avg = Double.parseDouble(total) / Double.parseDouble(count) ;
+        double avg = Double.parseDouble(total) / Double.parseDouble(count);
         content.add("Price per Item: €" + avg);
         content.add("Prepared by: AutoDoc System");
         content.add("Document Type: RECEIPT");

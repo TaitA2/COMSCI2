@@ -2,6 +2,7 @@
 interface Vehicle {
     // Default start and stop methods
     void start();
+
     void stop();
 }
 

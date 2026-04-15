@@ -4,7 +4,7 @@ abstract class Shape {
     protected String color;
 
     // Constructor
-    public Shape(String color){
+    public Shape(String color) {
         this.color = color;
     }
 
@@ -12,7 +12,7 @@ abstract class Shape {
     abstract double getArea();
 
     // Concrete method to print this shape's color
-    void displayColor(){
+    void displayColor() {
         System.out.println("Shape color: " + this.color);
     }
 }
@@ -29,11 +29,11 @@ class Circle extends Shape {
     }
 
     // Implementation of getArea
-    double getArea(){
-        if (this.radius <= 0){
+    double getArea() {
+        if (this.radius <= 0) {
             return 0;
         }
-        return Math.PI*this.radius*this.radius;
+        return Math.PI * this.radius * this.radius;
     }
 }
 
@@ -50,8 +50,8 @@ class Rectangle extends Shape {
     }
 
     // Implementation of getArea
-    double getArea(){
-        if (this.width <= 0 || this.height <= 0){
+    double getArea() {
+        if (this.width <= 0 || this.height <= 0) {
             return 0;
         }
         return this.width * this.height;
