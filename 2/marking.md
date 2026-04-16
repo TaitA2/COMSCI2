@@ -24,14 +24,14 @@
 * 70%
 
 ## Databases
-* Total - 27%
+* Total - 45%
 ### Continuous Assessment
 * 4 assignments - 100%
   * (Lab) Relational Model & Algebra - 15/15%
     * Feb 13
   * (Home) ER Models                 - 12/20%
     * Feb 27
-  * (Lab) F/D/ / Normalisation       - 25%
+  * (Lab) F/D/ / Normalisation       - 18/25%
     * March 13
   * (Lab) SQL Exam                   - 40%
     * April 10
@@ -45,12 +45,12 @@
   * React              - 40%
 
 ## Software Testing
-* Total - 48.5%
+* Total - 59%
 ### Continuous Assessment
 * 3 Lab exams - 100%
   * Feb 4  - 20/30%
   * Mar 11 - 28.5/40%
-  * Apr 8  - 30%
+  * Apr 8  - 10.5(?)/30%
 
 ## Programming 4
 * Total - 6.8%
