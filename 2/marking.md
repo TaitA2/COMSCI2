@@ -37,11 +37,11 @@
     * April 10
 
 ## Fullstack Development
-* Total - 46.92(?)%
+* Total - 46.12%
 ### Continuous Assessment
 * 4 loop exams - 100%
   * Django + REST/APIs - 33.52/40%
-  * Javascript         - 13.4(?)/20%
+  * Javascript         - 12.6/20%
   * React              - 40%
 
 ## Software Testing
