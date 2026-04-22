@@ -12,6 +12,8 @@
 * **Amdahl's law**
 * busy waiting / spinlock
 * **SRTF**
+* shared memory and message passing
+* producer consumer problem
 
 # Q3 - 
 * race condition
@@ -24,3 +26,6 @@
 * paging
   * paging table
 * chmod
+* inode
+* DMA vs I/O
+* TLB
